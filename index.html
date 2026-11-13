@@ -1,0 +1,1064 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Abeer 💜</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --pink: #ff8fc7;
+    --purple: #b99aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    background:
+        radial-gradient(circle at 15% 15%, #49205d 0%, transparent 35%),
+        radial-gradient(circle at 85% 40%, #35205f 0%, transparent 35%),
+        linear-gradient(135deg, #100b20, #1a102d 55%, #100b20);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, white 50%, transparent),
+        radial-gradient(2px 2px at 70% 20%, #ffb7df 50%, transparent),
+        radial-gradient(1px 1px at 40% 80%, white 50%, transparent),
+        radial-gradient(2px 2px at 85% 75%, #d5b5ff 50%, transparent),
+        radial-gradient(1px 1px at 10% 65%, white 50%, transparent);
+    background-size: 230px 230px;
+    opacity: .55;
+    animation: starsMove 30s linear infinite;
+}
+
+@keyframes starsMove {
+    from { transform: translateY(0); }
+    to { transform: translateY(-230px); }
+}
+
+.glow {
+    position: fixed;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: #d45bba;
+    filter: blur(120px);
+    opacity: .12;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.glow.one {
+    top: 15%;
+    left: -100px;
+}
+
+.glow.two {
+    right: -100px;
+    bottom: 10%;
+    background: #8565ff;
+}
+
+/* INTRO */
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: linear-gradient(135deg, #130b25, #32153f, #170d2b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    transition: opacity .8s ease, visibility .8s ease;
+}
+
+#intro.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.intro-content {
+    max-width: 600px;
+    animation: appear 1.2s ease;
+}
+
+.intro-small {
+    color: var(--pink);
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.intro-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 10vw, 90px);
+    background: linear-gradient(90deg, #ff9bd0, #d0a5ff, #fff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.intro-content h2 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #e8d8ff;
+    margin-bottom: 35px;
+}
+
+/* BUTTONS */
+
+.primary-btn {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: #25112f;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff9bd0, #c5a1ff);
+    box-shadow: 0 0 30px #e18bca55;
+    transition: .3s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 40px #e18bca99;
+}
+
+/* GENERAL */
+
+main {
+    display: none;
+    padding-bottom: 60px;
+}
+
+main.show {
+    display: block;
+    animation: appear 1s ease;
+}
+
+section {
+    width: min(1050px, 90%);
+    margin: auto;
+    padding: 90px 0;
+}
+
+.section-label {
+    color: var(--pink);
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 14px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 18px;
+    background: linear-gradient(90deg, #fff, #e6b5ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.section-description {
+    color: #c9bad9;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #ff9bd055;
+    border-radius: 30px;
+    color: #ffc1e1;
+    background: #ff9bd011;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 9vw, 85px);
+    line-height: 1.1;
+    background: linear-gradient(90deg, #ff9bd0, #d0a5ff, #fff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #d4c5e5;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-heart {
+    font-size: 35px;
+    display: block;
+    margin-top: 30px;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* PHOTO */
+
+.photo-card {
+    width: min(350px, 90%);
+    margin: 35px auto 0;
+    padding: 13px 13px 22px;
+    background: #fff8fc;
+    border-radius: 5px;
+    transform: rotate(-3deg);
+    box-shadow: 0 15px 55px #0006;
+    transition: .4s;
+}
+
+.photo-card:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    background: #ead9ed;
+}
+
+.photo-caption {
+    color: #4b3155;
+    text-align: center;
+    padding-top: 14px;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+}
+
+/* LETTERS */
+
+.letter-container {
+    max-width: 650px;
+    margin: 40px auto 0;
+    padding: 35px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #ffffff12, #ff9bd011);
+    border: 1px solid #ff9bd055;
+    box-shadow: 0 15px 50px #0003;
+}
+
+.letter-counter {
+    color: var(--pink);
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.letter-paper {
+    min-height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.letter-message {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    line-height: 1.8;
+    color: #f4dff1;
+    animation: appear .4s ease;
+}
+
+.letter-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.nav-btn {
+    border: 1px solid #ff9bd077;
+    background: rgba(255,255,255,.07);
+    color: white;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background: #ff9bd033;
+    transform: translateY(-3px);
+}
+
+.nav-btn:disabled {
+    opacity: .3;
+    cursor: not-allowed;
+}
+
+.letter-progress {
+    height: 5px;
+    background: #ffffff18;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.letter-progress-fill {
+    height: 100%;
+    width: 4.35%;
+    background: linear-gradient(90deg, #ff9bd0, #c5a1ff);
+    transition: width .3s ease;
+    border-radius: 10px;
+}
+
+/* CARDS */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.075);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #ff9bd077;
+    background: rgba(255,255,255,.11);
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #ffd0e9;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+}
+
+.card p {
+    color: #c9bad9;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* GIFT */
+
+.gift-box {
+    font-size: 95px;
+    margin: 30px 0;
+    cursor: pointer;
+    display: inline-block;
+    transition: .4s;
+    filter: drop-shadow(0 0 20px #ff8fc766);
+}
+
+.gift-box:hover {
+    transform: scale(1.15) rotate(-8deg);
+}
+
+.gift-message {
+    display: none;
+    max-width: 600px;
+    margin: 25px auto 0;
+    padding: 25px;
+    background: rgba(255,255,255,.075);
+    border: 1px solid #ff9bd055;
+    border-radius: 20px;
+    color: #f3dff0;
+    line-height: 1.9;
+}
+
+.gift-message.show {
+    display: block;
+    animation: appear .6s ease;
+}
+
+/* CAKE */
+
+.cake {
+    font-size: 90px;
+    margin: 25px 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.wish-btn {
+    margin-top: 15px;
+}
+
+/* FINAL LETTER */
+
+.final-letter {
+    max-width: 750px;
+    margin: 35px auto 0;
+    padding: 35px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #ffffff12, #ff9bd011);
+    border: 1px solid #ff9bd055;
+    box-shadow: 0 15px 50px #0003;
+}
+
+.final-letter p {
+    color: #e8d9ef;
+    line-height: 2;
+    margin-bottom: 17px;
+}
+
+.signature {
+    color: #ffadd7 !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    color: #bca9d0;
+    font-size: 13px;
+    border-top: 1px solid #ffffff12;
+}
+
+footer span {
+    color: var(--pink);
+}
+
+/* ANIMATIONS */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    z-index: 90;
+    pointer-events: none;
+    animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    section {
+        padding: 65px 0;
+    }
+
+    .hero {
+        min-height: 85vh;
+    }
+
+    .photo-card img {
+        height: 280px;
+    }
+
+    .final-letter {
+        padding: 23px;
+    }
+
+    .letter-container {
+        padding: 20px;
+    }
+
+    .letter-message {
+        font-size: 20px;
+    }
+
+    .nav-btn {
+        padding: 11px 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<!-- INTRO SCREEN -->
+
+<div id="intro">
+    <div class="intro-content">
+        <p class="intro-small">A SPECIAL DAY • A SPECIAL PERSON</p>
+        <h1>Abeer</h1>
+        <h2>Chapter 23 begins ✨</h2>
+
+        <button class="primary-btn" onclick="enterWebsite()">
+            Enter Your Universe 💜
+        </button>
+    </div>
+</div>
+
+<main id="mainContent">
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <span class="hero-tag">✦ 15 NOVEMBER • CHAPTER 23 ✦</span>
+
+            <h1>Happy Birthday,<br>Abeer!</h1>
+
+            <p>
+                Another year, another chapter, and another opportunity
+                for the world to be lucky enough to have you in it.
+                <br>
+                Today is all about celebrating YOU. 💗
+            </p>
+
+            <button class="primary-btn"
+                onclick="document.getElementById('letters').scrollIntoView()">
+                There's something for you ↓
+            </button>
+
+            <span class="hero-heart">💗</span>
+
+            <div class="photo-card">
+                <img src="./abeer.jpeg" alt="Abeer">
+                <div class="photo-caption">A little piece of happiness ✨</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 23 LITTLE LETTERS -->
+
+    <section id="letters">
+
+        <div class="center">
+            <p class="section-label">A LITTLE SOMETHING</p>
+
+            <h2 class="section-title">23 Little Letters 💌</h2>
+
+            <p class="section-description">
+                23 little messages for your 23rd chapter.
+                Open them one by one.
+            </p>
+        </div>
+
+        <div class="letter-container">
+
+            <div class="center">
+                <p class="letter-counter" id="letterCounter">
+                    LETTER 1 OF 23
+                </p>
+            </div>
+
+            <div class="letter-paper">
+                <p class="letter-message" id="letterMessage">
+                    You deserve all the happiness in the world.
+                    Never forget that. 💗
+                </p>
+            </div>
+
+            <div class="letter-navigation">
+
+                <button class="nav-btn"
+                    id="previousButton"
+                    onclick="previousLetter()"
+                    disabled>
+                    ← Previous
+                </button>
+
+                <button class="nav-btn"
+                    id="nextButton"
+                    onclick="nextLetter()">
+                    Next →
+                </button>
+
+            </div>
+
+            <div class="letter-progress">
+                <div class="letter-progress-fill"
+                    id="progressFill"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GIFT -->
+
+    <section id="gift">
+
+        <div class="center">
+
+            <p class="section-label">A LITTLE SURPRISE</p>
+
+            <h2 class="section-title">Open Your Gift 🎁</h2>
+
+            <p class="section-description">
+                I may not have a magical present,
+                but I have something special for you.
+            </p>
+
+            <div class="gift-box" onclick="openGift()">🎁</div>
+
+            <p style="color:#d9c7e8;font-size:13px;">
+                Tap the gift to open it!
+            </p>
+
+            <div class="gift-message" id="giftMessage">
+
+                <h3 style="color:#ffb4dc;margin-bottom:12px;">
+                    YOUR GIFT ✨
+                </h3>
+
+                <p>
+                    I wish you a year full of unexpected happiness,
+                    beautiful opportunities, genuine people,
+                    unforgettable adventures, and reasons to be proud
+                    of yourself.
+                    <br><br>
+                    And unlimited laughter, obviously.
+                    You need that. 😂💜
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY YOU'RE SPECIAL -->
+
+    <section id="special">
+
+        <div class="center">
+
+            <p class="section-label">A FEW REMINDERS</p>
+
+            <h2 class="section-title">Why You're Special 💜</h2>
+
+            <p class="section-description">
+                Some things deserve to be said more than once.
+            </p>
+
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="card-icon">😂</div>
+                <h3>Your Humor</h3>
+                <p>
+                    You have this talent for making ordinary moments
+                    ten times funnier. Never lose that.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💗</div>
+                <h3>Your Heart</h3>
+                <p>
+                    You genuinely care about the people around you,
+                    and that says a lot about who you are.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🫶</div>
+                <h3>Your Loyalty</h3>
+                <p>
+                    You're one of those people who show up when
+                    it matters. That's something rare.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">✨</div>
+                <h3>Your Energy</h3>
+                <p>
+                    You make things feel lighter, brighter,
+                    and a whole lot more entertaining.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BIRTHDAY CAKE -->
+
+    <section id="cake">
+
+        <div class="center">
+
+            <p class="section-label">MAKE A WISH</p>
+
+            <h2 class="section-title">
+                One More Year, One More Wish 🎂
+            </h2>
+
+            <div class="cake">🎂</div>
+
+            <p class="section-description">
+                Close your eyes, make a wish, and get ready
+                for the best version of Chapter 23.
+            </p>
+
+            <button class="primary-btn wish-btn" onclick="makeWish()">
+                I Made My Wish ✨
+            </button>
+
+            <p id="wishMessage"
+                style="margin-top:22px;color:#ffb4dc;display:none;">
+                I hope this year gives you everything your heart is wishing for. 💗
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL LETTER -->
+
+    <section id="final">
+
+        <div class="center">
+            <p class="section-label">BEFORE YOU GO</p>
+            <h2 class="section-title">One Last Letter 💌</h2>
+        </div>
+
+        <div class="final-letter">
+
+            <p>Dear Abeer,</p>
+
+            <p>
+                Happy 23rd birthday! I genuinely hope you know how
+                appreciated you are and how lucky the people around
+                you are to have you.
+            </p>
+
+            <p>
+                Thank you for being someone I can count on,
+                for all the laughs, the random conversations,
+                and for simply being yourself.
+            </p>
+
+            <p>
+                I hope this new chapter brings you success,
+                peace, new adventures, and all the happiness
+                you deserve. Never stop being the funny,
+                strong, and wonderful person you are.
+            </p>
+
+            <p>
+                And one VERY important thing: please don't go to
+                a therapist against your will… because EXCUSE ME,
+                I'M YOUR THERAPIST! 😂😭
+            </p>
+
+            <p>
+                My sessions are free, but unfortunately,
+                my advice is questionable and my professional
+                qualifications are just being your friend. 💀
+            </p>
+
+            <p>
+                Here's to many more memories, laughs,
+                and ridiculous conversations!
+            </p>
+
+            <p class="signature">
+                Happy Birthday, Abeer! 💜
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        Made with <span>♥</span> بواسطة لزقتك المفضلة عمرو 
+        <br><br>
+        Happy Chapter 23, Abeer. ✨
+    </footer>
+
+</main>
+
+<script>
+
+// INTRO
+
+function enterWebsite() {
+
+    document.getElementById("intro").classList.add("hide");
+
+    document.getElementById("mainContent").classList.add("show");
+
+    createConfetti();
+}
+
+
+// 23 LITTLE LETTERS
+
+const letters = [
+
+    "You deserve all the happiness in the world. Never forget that. 💗",
+
+    "Your laugh is genuinely one of the best sounds. 😂",
+
+    "Never underestimate how much you mean to the people around you.",
+
+    "I hope you achieve every dream you've been working for. ✨",
+
+    "You make ordinary days feel special.",
+
+    "Keep being the strong and determined person you are.",
+
+    "You deserve friendships that feel like home. 🫶",
+
+    "You will always be the nearest person to mee",
+
+    "I hope you always find reasons to smile.",
+
+    "You're more capable than you sometimes give yourself credit for.",
+
+    "May your next chapter be full of beautiful surprises.",
+
+    "Thank you for being someone people can depend on .",
+
+    "You deserve success without losing your peace.",
+
+    "مش هتروحي ل ثيرابيست يا عبير",
+
+    "I hope life surprises you in the best possible ways.",
+
+    "مش هتروحي ل ثيرابيست يا عبير 2",
+
+    "You have a way of making people feel comfortable.",
+
+    "Keep chasing the things that make you excited about life.",
+
+    "I hope you always have people who celebrate your wins.",
+
+    "Don't forget to enjoy the little things.",
+
+    "You are allowed to be proud of how far you've come.",
+
+    "هفضل لازقلك كددههههه",
+
+    "And finally: Happy 23rd birthday, Abeer! You deserve the best. 💜"
+
+];
+
+let currentLetter = 0;
+
+
+// DISPLAY CURRENT LETTER
+
+function updateLetter() {
+
+    const message = document.getElementById("letterMessage");
+
+    const counter = document.getElementById("letterCounter");
+
+    const previousButton = document.getElementById("previousButton");
+
+    const nextButton = document.getElementById("nextButton");
+
+    const progressFill = document.getElementById("progressFill");
+
+    // Restart animation
+
+    message.style.animation = "none";
+
+    message.offsetHeight;
+
+    message.style.animation = "appear .4s ease";
+
+    message.textContent = letters[currentLetter];
+
+    counter.textContent =
+        `LETTER ${currentLetter + 1} OF ${letters.length}`;
+
+    previousButton.disabled = currentLetter === 0;
+
+    nextButton.disabled = currentLetter === letters.length - 1;
+
+    progressFill.style.width =
+        ((currentLetter + 1) / letters.length * 100) + "%";
+
+}
+
+
+// NEXT LETTER
+
+function nextLetter() {
+
+    if (currentLetter < letters.length - 1) {
+
+        currentLetter++;
+
+        updateLetter();
+
+    }
+
+}
+
+
+// PREVIOUS LETTER
+
+function previousLetter() {
+
+    if (currentLetter > 0) {
+
+        currentLetter--;
+
+        updateLetter();
+
+    }
+
+}
+
+
+// INITIALIZE LETTERS
+
+updateLetter();
+
+
+// GIFT
+
+function openGift() {
+
+    document.getElementById("giftMessage").classList.add("show");
+
+    createConfetti();
+
+}
+
+
+// WISH
+
+function makeWish() {
+
+    document.getElementById("wishMessage").style.display = "block";
+
+    createConfetti();
+
+}
+
+
+// CONFETTI
+
+function createConfetti() {
+
+    const symbols = ["💗", "✨", "💜", "🌸", "⭐"];
+
+    for (let i = 0; i < 35; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.className = "confetti";
+
+        confetti.textContent =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        confetti.style.left = Math.random() * 100 + "vw";
+
+        confetti.style.fontSize =
+            (Math.random() * 15 + 12) + "px";
+
+        confetti.style.animationDuration =
+            (Math.random() * 3 + 3) + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+
+            confetti.remove();
+
+        }, 6000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
